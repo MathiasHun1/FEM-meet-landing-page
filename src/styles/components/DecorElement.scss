@@ -1,0 +1,40 @@
+@use '../colors';
+@use '../mixins';
+@use '../breakpoints';
+
+.wrapper-decor {
+  height: calc(56px + 80px);
+  width: min-content;
+  isolation: isolate;
+  position: relative;
+  display: flex;
+  z-index: 0;
+}
+
+.circle {
+  @include mixins.text-preset-5-desktop;
+  color: colors.$slate-600;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid colors.$slate-300;
+  display: grid;
+  place-items: center;
+  align-self: flex-end;
+  z-index: 100;
+  background-color: white;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 100%;
+  background: colors.$slate-300;
+  position: absolute;
+  left: 50%;
+  z-index: 10;
+}
+
+.wrapper-decor:last-of-type {
+  transform: translateY(28px);
+  z-index: 1000;
+}

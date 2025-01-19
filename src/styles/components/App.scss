@@ -1,0 +1,24 @@
+@use '../spacing';
+@use '../breakpoints';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.wrapper-app {
+  min-height: 100%;
+  font-family: 'Red Hat Display';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.wrapper-logo {
+  display: grid;
+  place-items: center;
+  padding-top: spacing.$spacing-600;
+}

@@ -1,0 +1,107 @@
+@use './colors';
+
+@mixin Red-Hat-Display-Black() {
+  font-family: 'Red Hat Display';
+  font-weight: 900;
+}
+
+@mixin Red-Hat-Display-Medium() {
+  font-family: 'Red Hat Display';
+  font-weight: 500;
+}
+
+@mixin text-preset-1-mobile() {
+  @include Red-Hat-Display-Black();
+  font-size: calc(40rem / 16);
+  line-height: 1.1;
+  letter-spacing: 0px;
+  color: colors.$slate-900;
+}
+
+@mixin text-preset-1-tablet() {
+  @include Red-Hat-Display-Black();
+  font-size: calc(48rem / 16);
+  line-height: 1.1;
+  letter-spacing: 0px;
+  color: colors.$slate-900;
+}
+
+@mixin text-preset-1-desktop() {
+  @include Red-Hat-Display-Black();
+  font-size: calc(64rem / 16);
+  line-height: 1.1;
+  letter-spacing: 0px;
+  color: colors.$slate-900;
+}
+
+@mixin text-preset-2-mobile() {
+  @include Red-Hat-Display-Black();
+  font-size: calc(32rem / 16);
+  line-height: 1.1;
+  letter-spacing: 0px;
+  color: colors.$slate-900;
+}
+
+@mixin text-preset-2-tablet() {
+  @include Red-Hat-Display-Black();
+  font-size: calc(36rem / 16);
+  line-height: 1.1;
+  letter-spacing: 0px;
+  color: colors.$slate-900;
+}
+
+@mixin text-preset-2-desktop() {
+  @include Red-Hat-Display-Black();
+  font-size: calc(40rem / 16);
+  line-height: 1.1;
+  letter-spacing: 0px;
+  color: colors.$slate-900;
+}
+
+@mixin text-preset-3-mobile() {
+  @include Red-Hat-Display-Black();
+  font-size: (12rem / 16);
+  line-height: 1.1;
+  letter-spacing: 4px;
+  color: colors.$cyan-600;
+}
+
+@mixin text-preset-3-tablet() {
+  @include Red-Hat-Display-Black();
+  font-size: (14rem / 16);
+  line-height: 1.1;
+  letter-spacing: 4px;
+  color: colors.$cyan-600;
+}
+
+@mixin text-preset-3-desktop() {
+  @include Red-Hat-Display-Black();
+  font-size: (16rem / 16);
+  line-height: 1.1;
+  letter-spacing: 4px;
+  color: colors.$cyan-600;
+}
+
+@mixin text-preset-4-tablet() {
+  @include Red-Hat-Display-Medium();
+  font-size: calc(16rem / 16);
+  line-height: 1.1;
+  letter-spacing: 0px;
+  color: colors.$slate-900;
+}
+
+@mixin text-preset-4-desktop() {
+  @include Red-Hat-Display-Medium();
+  font-size: calc(18rem / 16);
+  line-height: 1.1;
+  letter-spacing: 0px;
+  color: colors.$slate-900;
+}
+
+@mixin text-preset-5-desktop() {
+  @include Red-Hat-Display-Black();
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: colors.$slate-900;
+}
