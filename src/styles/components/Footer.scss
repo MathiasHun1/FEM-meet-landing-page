@@ -9,7 +9,10 @@ footer {
   position: relative;
   isolation: isolate;
   z-index: 0;
-  // transform: translateY(-20px);
+
+  img {
+    width: 100%;
+  }
 }
 
 .image-wrapper-footer {
