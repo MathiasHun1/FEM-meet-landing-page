@@ -1,5 +1,6 @@
 @use '../spacing';
 @use '../breakpoints';
+@use '../colors';
 
 html,
 body,
@@ -15,6 +16,7 @@ body,
   align-items: center;
   text-align: center;
   overflow: hidden;
+  background: colors.$white;
 }
 
 .wrapper-logo {
