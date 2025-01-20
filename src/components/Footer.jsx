@@ -18,7 +18,9 @@ const Footer = () => {
         <p className="text-footer">
           Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
         </p>
-        <Button text="Download" spanText="v1.3" color="purple" />
+        <div>
+          <Button text="Download" spanText="v1.3" color="purple" />
+        </div>
       </div>
     </footer>
   );

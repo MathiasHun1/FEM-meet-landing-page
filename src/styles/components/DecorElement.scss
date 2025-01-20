@@ -12,7 +12,7 @@
 }
 
 .circle {
-  @include mixins.text-preset-5-desktop;
+  @include mixins.text-preset-5-desktop();
   color: colors.$slate-600;
   width: 56px;
   height: 56px;

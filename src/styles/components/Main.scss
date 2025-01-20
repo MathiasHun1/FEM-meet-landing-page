@@ -5,7 +5,7 @@
 
 .wrapper-main {
   padding: spacing.$spacing-400;
-  padding-bottom: spacing.$spacing-800;
+  padding-bottom: calc(spacing.$spacing-800 - 28px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,17 +39,17 @@
 }
 
 .title-main {
-  @include mixins.text-preset-3-mobile;
+  @include mixins.text-preset-3-mobile();
   margin-bottom: spacing.$spacing-200;
 }
 
 .bold-text-main {
-  @include mixins.text-preset-2-mobile;
+  @include mixins.text-preset-2-mobile();
   margin-bottom: spacing.$spacing-400;
 }
 
 .arcticle-main {
-  @include mixins.text-preset-4-tablet;
+  @include mixins.text-preset-4-tablet();
   color: colors.$slate-600;
 }
 
@@ -64,11 +64,11 @@
   }
 
   .title-main {
-    @include mixins.text-preset-3-tablet;
+    @include mixins.text-preset-3-tablet();
   }
 
   .bold-text-main {
-    @include mixins.text-preset-2-tablet;
+    @include mixins.text-preset-2-tablet();
   }
 }
 
@@ -86,19 +86,19 @@
   }
 
   .wrapper-main {
-    padding-bottom: spacing.$spacing-900;
+    padding-bottom: calc(spacing.$spacing-900 - 28px);
   }
 
   .title-main {
-    @include mixins.text-preset-3-desktop;
+    @include mixins.text-preset-3-desktop();
   }
 
   .bold-text-main {
-    @include mixins.text-preset-2-desktop;
+    @include mixins.text-preset-2-desktop();
   }
 
   .arcticle-main {
-    @include mixins.text-preset-4-desktop;
+    @include mixins.text-preset-4-desktop();
     color: colors.$slate-600;
   }
 }
