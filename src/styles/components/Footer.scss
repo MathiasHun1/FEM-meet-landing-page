@@ -11,7 +11,8 @@ footer {
   z-index: 0;
 
   img {
-    width: 100%;
+    // width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -72,6 +73,8 @@ footer::after {
 
   .tablet-image {
     display: block;
+    width: 100%;
+    object-fit: cover;
   }
 
   .title-footer {
@@ -88,6 +91,8 @@ footer::after {
 
   .desktop-image {
     display: block;
+    height: 100%;
+    object-fit: cover;
   }
 
   .title-footer {
@@ -110,8 +115,7 @@ footer::after {
     flex-direction: row;
     gap: 60px;
     text-align: start;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 112px 80px;
     max-width: 1240px;
 
     h2 {
